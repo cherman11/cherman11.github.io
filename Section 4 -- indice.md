@@ -9,8 +9,8 @@
 	Destino peticion: Es el usuario que estara esperando una respuesta
 	Objeto: Es el objeto, de tipo lista que sera enviada al usuario destino.
 	
-##Obtener lista solicitudes de usuario
-	      ---------------------------------------------------
+## Obtener lista solicitudes de usuario
+	---------------------------------------------------
        | Comando|| token|| destino de la peticion ||objeto |
         ---------------------------------------------------
 	Comando: Es la palabra con la cual se indentifica cual sera la peticion que se enviara al servidor.
@@ -19,7 +19,7 @@
 	Objeto: Es el objeto, de tipo lista que sera enviada al usuario destino.
 	
 ## Enviar un mensaje
-	      -------------------------------------------------------------------------------
+	-------------------------------------------------------------------------------
        | Comando|| token||id mensaje||destino del mensaje||Origen del mensaje||mensaje|
         -------------------------------------------------------------------------------
 	Comando: Es la palabra con la cual se indentifica cual sera la peticion que se enviara al servidor.
@@ -30,7 +30,7 @@
 	Mensaje: Mensaje enviado.
 
 ## Enviar un archivo
-	       --------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------
        | Comando|| token||id mensaje||destino del mensaje||Origen del mensaje||Nombre archivo||Contenido archivo|
         --------------------------------------------------------------------------------------------------------
 	Comando: Es la palabra con la cual se indentifica cual sera la peticion que se enviara al servidor.
@@ -42,7 +42,7 @@
 	Contenido archivo: Es el contenido del archivo, codificado en base 64, que sera enviado.
 	
 ## Enviar un meme
-	      ----------------------------------------------------------------------------------
+        ----------------------------------------------------------------------------------
        | Comando|| token||id mensaje||destino del mensaje||Origen del mensaje||Nombre meme|
         ----------------------------------------------------------------------------------
 	Comando: Es la palabra con la cual se indentifica cual sera la peticion que se enviara al servidor.
@@ -53,7 +53,7 @@
 	Nombre meme: Es el nombre del meme que sera enviado.
 	
 ## Enviar una imagen
-	      --------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------
        | Comando|| token||id mensaje||destino del mensaje||Origen del mensaje||Nombre imagen||Contenido archivo|
         --------------------------------------------------------------------------------------------------------
 	Comando: Es la palabra con la cual se indentifica cual sera la peticion que se enviara al servidor.
@@ -65,7 +65,7 @@
 	Contenido archivo: Es el contenido del archivo, codificado en base 64, que sera enviado.
 	
 ## Enviar una Solicitud
-	      --------------------------------------------------------------------
+	--------------------------------------------------------------------
        | Comando|| token||destino de la solicitud||Origen Solicitud||Mensaje|
         --------------------------------------------------------------------
 	Comando: Es la palabra con la cual se indentifica cual sera la peticion que se enviara al servidor.
@@ -76,7 +76,7 @@
 
 ## Respuesta
 
-	      ---------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------
        | Comando|| token||Id respuesta||Comando a responder||destino de respuesta||Estado|
         ---------------------------------------------------------------------------------
 	Comando: Es la palabra con la cual se indentifica cual sera la peticion que se enviara al servidor.
@@ -87,7 +87,7 @@
 	Estado: Es el codigo que sera enviado al destino identificado.
 	
 ## Desconectarse
-	      --------------------------------
+	--------------------------------
        | Comando|| token||origen||Estado|
         --------------------------------
 	Comando: Es la palabra con la cual se indentifica cual sera la peticion que se enviara al servidor.
