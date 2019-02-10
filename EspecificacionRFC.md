@@ -16,7 +16,7 @@ Gustavo Salgado
 Juan S Ocampo
 German F Valencia
 
-# [INDICE](Section%201%20--%20indice.md)
+# [PREFACIO](Section%201%20--%20indice.md)
 
 # [INTRODUCCION](Section%202%20--%20indice.md)
 
