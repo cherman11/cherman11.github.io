@@ -24,132 +24,132 @@ respuesta del estado de la transaccion realizada con el mensaje enviado.
 
 	
 ## Definicion del formato del protocolo
-	
+
 ### Lista de usuarios conectados
 		
-Comando:#lista_usuarios
-Separador componentes:||
-destino: usuario
-objeto: "lista_usuarios"
-token: identificador usuario
+	Comando:#lista_usuarios
+	Separador componentes:||
+	destino: usuario
+	objeto: "lista_usuarios"
+	token: identificador usuario
 	
 ### Obtener lista solicitudes de usuario
 
-Comando:#lista_solicitudes
-Separador componentes:||
-destino: usuario
-objeto: "lista_solicitudes"
-token:identificador usuario
+	Comando:#lista_solicitudes
+	Separador componentes:||
+	destino: usuario
+	objeto: "lista_solicitudes"
+	token:identificador usuario
 	
 ### Enviar mensaje
-Comando:#mensaje
-Separador componentes:||
-origen: Usuario
-destino: usuario
-id: 969999
-mensaje: "hola :) "		
-token:identificador usuario
+	Comando:#mensaje
+	Separador componentes:||
+	origen: Usuario
+	destino: usuario
+	id: 969999
+	mensaje: "hola :) "		
+	token:identificador usuario
 
 ### Enviar archivo
-Comando:#archivo
-Separador componentes:||
-origen: Usuario
-destino: usuario
-id: 969999
-nombre_archivo: "archivo.pdf"
-Contenido_archivo: base64
-token:identificador usuario
+	Comando:#archivo
+	Separador componentes:||
+	origen: Usuario
+	destino: usuario
+	id: 969999
+	nombre_archivo: "archivo.pdf"
+	Contenido_archivo: base64
+	token:identificador usuario
 	
 ### Enviar meme
-Comando:#meme
-Separador componentes:||
-origen: Usuario
-destino: usuario
-id: 969999
-nombre_meme: "meme.png"
-token:identificador usuario
+	Comando:#meme
+	Separador componentes:||
+	origen: Usuario
+	destino: usuario
+	id: 969999
+	nombre_meme: "meme.png"
+	token:identificador usuario
 
 ### Enviar imagen
-Comando:#img
-Separador componentes:||
-origen: Usuario
-destino: usuario
-id: 969999
-nombre_archivo: "imagen.jpeg"
-Contenido_archivo: base64
-token: indentificador usuario
-Estrucutura del mensaje
+	Comando:#img
+	Separador componentes:||
+	origen: Usuario
+	destino: usuario
+	id: 969999
+	nombre_archivo: "imagen.jpeg"
+	Contenido_archivo: base64
+	token: indentificador usuario
+	Estrucutura del mensaje
 
 ### Enviar solicitud
-Comando:#solicitud
-Separador componentes:||
-origen: Usuario
-destino: usuario
-id: 969999
-mensaje: "Agregar"
-token:Identificador Usuario
+	Comando:#solicitud
+	Separador componentes:||
+	origen: Usuario
+	destino: usuario
+	id: 969999
+	mensaje: "Agregar"
+	token:Identificador Usuario
 
 
 ### Respuesta
-Comando:#respuesta
-Comando a responder:#comando
-Separador componentes:||
-destino: usuario
-id: 969999
-Estado:Codigo respuesta
-token:Identificador usuario
+	Comando:#respuesta
+	Comando a responder:#comando
+	Separador componentes:||
+	destino: usuario
+	id: 969999
+	Estado:Codigo respuesta
+	token:Identificador usuario
 
 ### Desconectar
-Comando:#desconectar
-Separador componentes:||
-origen: usuario	
-Estado:Codigo respuesta
-token:Identificador usuario
+	Comando:#desconectar
+	Separador componentes:||
+	origen: usuario	
+	Estado:Codigo respuesta
+	token:Identificador usuario
 
 ## Estructura de los mensajes
 
 ### Lista de usuarios conectados
- ---------------------------------------------------
- |Comando|| token|| destino de la peticion ||objeto |
- ---------------------------------------------------
+        ---------------------------------------------------
+       | Comando|| token|| destino de la peticion ||objeto |
+        ---------------------------------------------------
 	
-### Obtener lista solicitudes de usuario
- ---------------------------------------------------
-| Comando|| token|| destino de la peticion ||objeto |
- ---------------------------------------------------
+###  Obtener lista solicitudes de usuario
+	---------------------------------------------------
+       | Comando|| token|| destino de la peticion ||objeto |
+        ---------------------------------------------------
 	
-### Enviar mensaje
- ------------------------------------------------------------------------------
-| Comando|| token||id mensaje||destino del mensaje||Origen del mensaje||mensaje|
- ------------------------------------------------------------------------------
+###  Enviar mensaje
+	-------------------------------------------------------------------------------
+       | Comando|| token||id mensaje||destino del mensaje||Origen del mensaje||mensaje|
+        -------------------------------------------------------------------------------
 
 ### Enviar archivo
- --------------------------------------------------------------------------------------------------------
-| Comando|| token||id mensaje||destino del mensaje||Origen del mensaje||Nombre archivo||Contenido archivo|
- --------------------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------
+       | Comando|| token||id mensaje||destino del mensaje||Origen del mensaje||Nombre archivo||Contenido archivo|
+        --------------------------------------------------------------------------------------------------------
 	
 ### Enviar meme
- ----------------------------------------------------------------------------------
-| Comando|| token||id mensaje||destino del mensaje||Origen del mensaje||Nombre meme|
- ----------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------
+       | Comando|| token||id mensaje||destino del mensaje||Origen del mensaje||Nombre meme|
+        ----------------------------------------------------------------------------------
 	
-### Enviar imagen
- -------------------------------------------------------------------------------------------------------
-| Comando|| token||id mensaje||destino del mensaje||Origen del mensaje||Nombre imagen||Contenido archivo|
- -------------------------------------------------------------------------------------------------------
+###  Enviar imagen
+	--------------------------------------------------------------------------------------------------------
+       | Comando|| token||id mensaje||destino del mensaje||Origen del mensaje||Nombre imagen||Contenido archivo|
+        --------------------------------------------------------------------------------------------------------
 	
- ### Enviar Solicitud
- --------------------------------------------------------------------
-| Comando|| token||destino de la solicitud||Origen Solicitud||Mensaje|
- --------------------------------------------------------------------
+### Enviar Solicitud
+	--------------------------------------------------------------------
+       | Comando|| token||destino de la solicitud||Origen Solicitud||Mensaje|
+        --------------------------------------------------------------------
 
 ### Respuesta
- ---------------------------------------------------------------------------------
-| Comando|| token||Id respuesta||Comando a responder||destino de respuesta||Estado|
- ---------------------------------------------------------------------------------
+
+	---------------------------------------------------------------------------------
+       | Comando|| token||Id respuesta||Comando a responder||destino de respuesta||Estado|
+        ---------------------------------------------------------------------------------
 	
 ### Desconectarse
- --------------------------------
-| Comando|| token||origen||Estado|
- --------------------------------
-
+	--------------------------------
+       | Comando|| token||origen||Estado|
+        --------------------------------
